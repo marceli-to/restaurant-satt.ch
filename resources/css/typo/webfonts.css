@@ -1,0 +1,20 @@
+/**
+ * Typography - Webfonts
+ * -----------------------------------------------------------------------------
+ */
+
+@font-face {
+  font-family: 'Reckless-Bold';
+  src: url('fonts/RecklessStandardS-Bold.woff2') format('woff2'), url('fonts/RecklessStandardS-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Reckless-Regular';
+  src: url('fonts/RecklessStandardS-Regular.woff2') format('woff2'), url('fonts/RecklessStandardS-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

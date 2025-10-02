@@ -1,0 +1,28 @@
+{
+  "resources/css/app.css": {
+    "file": "assets/app-e220d963.css",
+    "isEntry": true,
+    "src": "resources/css/app.css"
+  },
+  "resources/css/fonts/RecklessStandardS-Bold.woff": {
+    "file": "assets/RecklessStandardS-Bold-a59b13f8.woff",
+    "src": "resources/css/fonts/RecklessStandardS-Bold.woff"
+  },
+  "resources/css/fonts/RecklessStandardS-Bold.woff2": {
+    "file": "assets/RecklessStandardS-Bold-8ea65491.woff2",
+    "src": "resources/css/fonts/RecklessStandardS-Bold.woff2"
+  },
+  "resources/css/fonts/RecklessStandardS-Regular.woff": {
+    "file": "assets/RecklessStandardS-Regular-09bb6685.woff",
+    "src": "resources/css/fonts/RecklessStandardS-Regular.woff"
+  },
+  "resources/css/fonts/RecklessStandardS-Regular.woff2": {
+    "file": "assets/RecklessStandardS-Regular-1e9c0f93.woff2",
+    "src": "resources/css/fonts/RecklessStandardS-Regular.woff2"
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-88cf8755.js",
+    "isEntry": true,
+    "src": "resources/js/app.js"
+  }
+}

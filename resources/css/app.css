@@ -1,0 +1,33 @@
+@import "typo/webfonts.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+[x-cloak] { 
+  @apply !hidden;
+}
+
+main {
+  @apply flex-1;
+}
+
+main a {
+  @apply underline underline-offset-4 md:underline-offset-8 decoration-1 md:decoration-2 hover:text-plum hover:no-underline;
+}
+
+p:not(:last-child),
+ul:not(:last-child) {
+  @apply mb-30;
+}
+
+p:has(+ ul) {
+  @apply !mb-0
+}
+
+ul {
+}
+
+strong {
+  @apply font-reckless-bold font-bold;
+}

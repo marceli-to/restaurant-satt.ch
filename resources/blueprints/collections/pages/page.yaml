@@ -1,0 +1,79 @@
+title: Page
+tabs:
+  main:
+    display: Content
+    sections:
+      -
+        display: Content
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              localizable: false
+              validate:
+                - required
+          -
+            handle: blocks
+            field:
+              type: replicator
+              display: Inhaltselemente
+              localizable: true
+              collapse: true
+              sets:
+                main_elements:
+                  display: Hauptelemente
+                  icon: addon-boxes-stack
+                  sets:
+                    editor:
+                      display: Editor
+                      instructions: 'Texteditor hinzufügen'
+                      icon: text-formatting-markdown
+                      fields:
+                        -
+                          import: editor
+                    menu_card:
+                      display: Menükarte
+                      instructions: 'Menükarte hinzufügen'
+                      icon: content-book-open
+                      fields:
+                        -
+                          import: menu_card
+  seo:
+    display: SEO
+    sections:
+      -
+        display: SEO
+        fields:
+          -
+            import: seo
+  settings:
+    display: Settings
+    sections:
+      -
+        display: Settings
+        fields:
+          -
+            import: settings
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'
+              show_regenerate: true
+          -
+            handle: parent
+            field:
+              type: entries
+              collections:
+                - pages
+              max_items: 1
+              listable: false
+              localizable: true

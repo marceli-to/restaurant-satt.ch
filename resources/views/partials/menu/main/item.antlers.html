@@ -1,0 +1,10 @@
+<li>
+  <a
+    href="{{ url }}"
+    class="{{ is_current || is_parent ? '' : '' }} underline underline-offset-9 decoration-4 hover:text-sage transition-[transform,color] inline-block duration-500 hover:[transform:rotateX(18deg)_rotateY(-44deg)_translateZ(0)]"
+    target="{{ is_external ? '_blank' : '_self' }}"
+    title="{{ label }}"
+    aria-label="{{ label }}">
+    {{ title }}
+  </a>
+</li>

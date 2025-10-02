@@ -1,0 +1,23 @@
+<header>
+  {{ partial:layout/container/inner class="flex flex-col gap-y-40 lg:gap-y-60" }}
+    {{ if is_homepage }}
+      {{ partial:icons/logo class="w-full h-auto" }}
+      {{ partial:menu/main/wrapper }}
+    {{ else }}
+    <div class="flex justify-between items-center">
+      {{ partial:components/headings/h1 }}
+        {{ title }}
+      {{ /partial:components/headings/h1 }}
+
+      <a 
+        href="/" 
+        title="Zurück zur Startseite" 
+        aria-label="Zurück zur Startseite" 
+        class="text-plum group w-40 lg:w-56 xl:w-64">
+        {{ partial:icons/arrow class="w-full h-auto group-hover:-translate-x-4 transition-all" }}
+      </a>
+    </div>
+    {{ /if }}
+
+  {{ /partial:layout/container/inner }}
+</header>

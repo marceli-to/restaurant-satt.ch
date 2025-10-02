@@ -1,0 +1,67 @@
+title: Menükarte
+fields:
+  -
+    handle: menu_card_section
+    field:
+      collapse: true
+      type: replicator
+      display: 'Karten Sektion'
+      localizable: false
+      sets:
+        menu_card_section:
+          display: 'Karten Sektion'
+          instructions: 'Karten Sektion hinzufügen'
+          icon: content-book-open
+          sets:
+            menu_card_section:
+              display: 'Karten Sektion'
+              instructions: 'Karten Sektion hinzufügen'
+              icon: content-book-open
+              fields:
+                -
+                  handle: section_title
+                  field:
+                    type: textarea
+                    display: Titel
+                    localizable: false
+                -
+                  handle: menu_card_section_article
+                  field:
+                    type: replicator
+                    display: Artikel
+                    localizable: false
+                    collapse: true
+                    sets:
+                      menu_card_section_article:
+                        display: Artikel
+                        instructions: 'Artikel hinzufügen'
+                        icon: food-menu-book
+                        sets:
+                          menu_card_section_article:
+                            display: Artikel
+                            instructions: 'Artikel hinzufügen'
+                            icon: food-menu-book
+                            fields:
+                              -
+                                import: menu_card_section_article
+                              -
+                                handle: menu_card_section_subarticle
+                                field:
+                                  type: replicator
+                                  display: Subartikel
+                                  localizable: false
+                                  if:
+                                    article_is_group: 'equals true'
+                                  sets:
+                                    sub_article:
+                                      display: Subartikel
+                                      instructions: 'Subartikel hinzufügen'
+                                      icon: food-menu-book
+                                      sets:
+                                        sub_article:
+                                          display: Subartikel
+                                          instructions: 'Subartikel hinzufügen'
+                                          icon: food-menu-book
+                                          fields:
+                                            -
+                                              import: menu_card_section_article

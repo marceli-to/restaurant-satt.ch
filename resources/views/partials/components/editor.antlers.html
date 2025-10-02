@@ -1,0 +1,12 @@
+{{ partial:layout/container/inner }}
+  <article class="{{ is_homepage ? 'text-sm sm:text-md lg:text-lg xl:text-xl' : '' }}">
+    {{ editor }}
+
+      {{ if type == 'text' }}
+        {{ text }}
+      {{ /if }}
+      
+    {{ /editor }}
+  </article>
+{{ /partial:layout/container/inner }}
+

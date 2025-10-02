@@ -1,0 +1,48 @@
+title: Menüartikel
+fields:
+  -
+    handle: article_is_group
+    field:
+      type: toggle
+      display: 'Gruppe?'
+      localizable: false
+  -
+    handle: article_title
+    field:
+      type: textarea
+      display: Titel
+      localizable: false
+  -
+    handle: article_description
+    field:
+      type: textarea
+      display: Beschreibung
+      localizable: false
+  -
+    handle: percentage
+    field:
+      append: '%'
+      type: text
+      display: Volumenprozent
+      localizable: false
+      width: 33
+      unless:
+        article_is_group: 'equals true'
+  -
+    handle: quantity
+    field:
+      type: text
+      display: 'Menge / Einheit'
+      localizable: false
+      width: 33
+      unless:
+        article_is_group: 'equals true'
+  -
+    handle: price
+    field:
+      type: text
+      display: Preis
+      localizable: false
+      width: 33
+      unless:
+        article_is_group: 'equals true'

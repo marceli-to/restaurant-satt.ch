@@ -1,0 +1,100 @@
+{{ partial:layout/container/inner class="text-plum flex flex-col gap-y-15 md:gap-y-30 lg:gap-y-45" }}
+  {{ menu_card_section }}
+    <article>
+      {{ partial:components/headings/h2 class="text-lg sm:text-xl lg:text-2xl mb-10 lg:mb-20" }}
+        {{ section_title }}
+      {{ /partial:components/headings/h2 }}
+
+      <div class="flex flex-col gap-y-20 lg:gap-y-25">
+
+        {{ menu_card_section_article }}
+          <div>
+            {{ if !article_is_group }}
+              <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between">
+                <div class="">
+
+                  {{ partial:components/headings/h3 class="text-sm md:text-md mb-3 md:mb-6" }}
+                    {{ article_title }}
+                  {{ /partial:components/headings/h3 }}
+
+                  {{ if article_description }}
+                    <div class="text-xxxs lg:text-xxs">
+                      {{ article_description | nl2br }}
+                    </div>
+                  {{ /if }}
+                </div>
+                <div class="flex sm:justify-between gap-20 md:gap-30 lg:gap-40 text-xxxs lg:text-xxs mt-7 sm:mt-0">
+                  {{ if percentage }}
+                    <span>
+                      {{ percentage }}%
+                    </span>
+                  {{ /if }}
+                  {{ if quantity }}
+                    <span>
+                      {{ quantity }}
+                    </span>
+                  {{ /if }}
+                  {{ if price }}
+                    <span class="font-reckless-bold font-bold">
+                      {{ price | format_number(2, '.', ',') }}
+                    </span>
+                  {{ /if }}
+                </div>
+              </div>
+            {{ /if }}
+
+            {{ if article_is_group }}
+              <div class="space-y-5">
+
+                {{ if article_title }}
+                  {{ partial:components/headings/h3 class="text-sm md:text-md text-pretty mb-3 md:mb-6" }}
+                    {{ article_title }}
+                  {{ /partial:components/headings/h3 }}
+                {{ /if }}
+
+                {{ if article_description }}
+                  <div class="text-xxxs lg:text-xxs">
+                    {{ article_description | nl2br }}
+                  </div>
+                {{ /if }}
+
+                {{ menu_card_section_subarticle }}
+
+                  <div class="flex flex-col sm:flex-row items-start {{ article_title ? 'sm:justify-between' : 'sm:justify-end' }}">
+                    {{ if article_title }}
+                      <div class="text-xxxs lg:text-xxs  max-w-[48rem] sm:text-balance mb-6">
+                        {{ article_title | nl2br }}
+                      </div>
+                    {{ /if }}
+                    <div class="flex sm:justify-between gap-20 md:gap-30 lg:gap-40 text-xxxs lg:text-xxs">
+                      {{ if percentage }}
+                        <span>
+                          {{ percentage }}%
+                        </span>
+                      {{ /if }}
+                      {{ if quantity }}
+                        <span>
+                          {{ quantity }}
+                        </span>
+                      {{ /if }}
+                      {{ if price }}
+                        <span class="font-reckless-bold font-bold">
+                          {{ price | format_number(2, '.', ',') }}
+                        </span>
+                      {{ /if }}
+                    </div>
+                  </div>
+
+                {{ /menu_card_section_subarticle }}
+
+              </div>
+            {{ /if }}
+
+          </div>
+        {{ /menu_card_section_article }}
+
+      </div>
+
+    </article>
+  {{ /menu_card_section }}
+{{ /partial:layout/container/inner }}
