@@ -33,13 +33,27 @@ tabs:
                       fields:
                         -
                           import: editor
-                    menu_card:
-                      display: Menükarte
-                      instructions: 'Menükarte hinzufügen'
-                      icon: content-book-open
+                    menu_category:
+                      display: 'Menü Kategorie'
+                      instructions: 'Kategorie hinzufügen'
+                      icon: text-formatting-all-caps
                       fields:
                         -
-                          import: menu_card
+                          import: menu_category
+                    menu_sub_category:
+                      display: 'Menü Unterkategorie'
+                      instructions: 'Unterkategorie hinzufügen'
+                      icon: text-formatting-all-caps
+                      fields:
+                        -
+                          import: menu_sub_category
+                    menu_position:
+                      display: 'Menü Position'
+                      instructions: 'Artikel hinzufügen'
+                      icon: food-menu-book
+                      fields:
+                        -
+                          import: menu_position
   seo:
     display: SEO
     sections:

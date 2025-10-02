@@ -1,0 +1,8 @@
+title: 'Menü Unterkategorie'
+fields:
+  -
+    handle: heading
+    field:
+      type: textarea
+      display: Beschreibung
+      localizable: false

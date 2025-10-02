@@ -1,0 +1,8 @@
+title: 'Menü Kategorie'
+fields:
+  -
+    handle: heading
+    field:
+      type: textarea
+      display: Beschreibung
+      localizable: false

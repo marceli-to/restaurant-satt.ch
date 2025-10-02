@@ -1,5 +1,5 @@
 <body 
-  class="antialiased font-reckless text-tiny leading-[1.2] text-forest px-20 pt-25 min-h-screen flex flex-col {{ page_class }}" 
+  class="antialiased font-reckless text-tiny leading-[1.2] {{ is_homepage ? 'text-forest' : 'text-plume' }} px-20 pt-25 min-h-screen flex flex-col {{ page_class }}" 
   x-data="{ menu: false }">
   {{ slot:header }}
   {{ slot }}

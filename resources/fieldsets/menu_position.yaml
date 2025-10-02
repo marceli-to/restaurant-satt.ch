@@ -1,0 +1,62 @@
+title: 'Menü Position'
+fields:
+  -
+    handle: article_title
+    field:
+      type: textarea
+      display: Titel
+      localizable: false
+      width: 66
+  -
+    handle: heading_size
+    field:
+      options:
+        -
+          key: default
+          value: Standard
+        -
+          key: small
+          value: Klein
+      default: default
+      type: select
+      display: 'Schriftgrösse Titel'
+      localizable: false
+      width: 33
+  -
+    handle: article_description
+    field:
+      type: textarea
+      display: Beschreibung
+      localizable: false
+  -
+    handle: article_info
+    field:
+      type: grid
+      display: Informationen
+      localizable: false
+      mode: stacked
+      min_rows: 1
+      add_row: 'Information hinzufügen'
+      fields:
+        -
+          handle: percentage
+          field:
+            append: '%'
+            type: text
+            display: Volumenprozent
+            localizable: false
+            width: 33
+        -
+          handle: unit
+          field:
+            type: text
+            display: Menge/Einheit
+            localizable: false
+            width: 33
+        -
+          handle: price
+          field:
+            type: text
+            display: Preis
+            localizable: false
+            width: 33

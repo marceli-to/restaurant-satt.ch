@@ -1,9 +1,24 @@
 
-{{ if type == 'editor' }}
-  {{ partial:components/editor }}
-{{ /if }}
 
-{{ if type == 'menu_card' }}
-  {{ partial:components/menu_card }}
-{{ /if }}
+
+  {{ if type == 'editor' }}
+    {{ partial:components/editor }}
+  {{ /if }}
+
+  {{ if type == 'menu_card' }}
+    {{ partial:components/menu_card }}
+  {{ /if }}
+
+  {{ if type == 'menu_category' }}
+    {{ partial:components/menu/category }}
+  {{ /if }}
+
+  {{ if type == 'menu_sub_category' }}
+    {{ partial:components/menu/subcategory }}
+  {{ /if }}
+
+  {{ if type == 'menu_position' }}
+    {{ partial:components/menu/position }}
+  {{ /if }}
+
 
