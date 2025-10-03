@@ -16,7 +16,15 @@ export default {
 
   theme: {
 
+    // screens: {
+    //   'xs': '480px',
+    // },
+
     extend: {
+
+      screens: {
+        'xs': '480px',
+      },
 
       maxWidth: {
         'inner-container': '64rem', // 1024px

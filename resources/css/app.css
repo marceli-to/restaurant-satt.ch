@@ -26,7 +26,12 @@ p:has(+ ul) {
   @apply !mb-0
 }
 
-ul {
+ul:not(nav ul) {
+  @apply list-disc ml-20 sm:ml-25 lg:ml-30 flex flex-col gap-y-10 lg:gap-y-15 my-30;
+}
+
+ul li {
+
 }
 
 strong {

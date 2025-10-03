@@ -1,6 +1,19 @@
 <footer class="mt-20 lg:mt-40 pb-40">
   {{ partial:layout/container/inner }}
-    &copy;{{ now | format('Y') }}, Restaurant SATT
+    &copy;{{ now | format('Y') }}, Restaurant SATT, 
+    <a 
+      href="/deklarationen" 
+      class="underline underline-offset-4 decoration-1 hover:no-underline"
+      aria-label="Deklarationen">
+      Deklarationen
+    </a>, 
+    <a href="https://suedhang.com/kleingedrucktes" 
+      target="_blank" 
+      rel="noopener noreferrer"
+      class="underline underline-offset-4 decoration-1 hover:no-underline"
+      aria-label="Kleingedrucktes">
+      Kleingedrucktes
+    </a>
   {{ /partial:layout/container/inner }}
 </footer>
 {{ vite src="resources/js/app.js" }}
