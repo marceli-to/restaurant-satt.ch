@@ -9,6 +9,10 @@
   @apply !hidden;
 }
 
+::selection {
+  @apply bg-blush text-forest;
+}
+
 main {
   @apply flex-1;
 }
@@ -42,7 +46,7 @@ strong {
   transition: transform 0.3s ease;
 }
 
-.animation-container:hover [data-animation-rotation] {
+.animation-container [data-animation-rotation] {
   animation: rotate 6s linear infinite;
 }
 
