@@ -1,3 +1,7 @@
+.gallery-swiper {
+  @apply !max-w-[calc(100%_-_60px)] md:!max-w-[calc(100%_-_80px)] lg:!max-w-[calc(100%_-_90px)] mx-auto;
+}
+
 .gallery-swiper .swiper-pagination {
   @apply flex items-center justify-center gap-x-8 md:gap-x-10 !relative !bottom-auto mt-10 md:mt-15;
 }

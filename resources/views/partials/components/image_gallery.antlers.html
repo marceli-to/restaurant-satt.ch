@@ -1,5 +1,5 @@
 <article class="relative">
-  <div class="swiper gallery-swiper !max-w-[calc(100%_-_60px)] md:!max-w-[calc(100%_-_80px)] lg:!max-w-[calc(100%_-_90px)] mx-auto">
+  <div class="swiper gallery-swiper">
     <div class="swiper-wrapper">
       {{ images }}
         <div class="swiper-slide">
@@ -11,16 +11,8 @@
         </div>
       {{ /images }}
     </div>
-
-    <!-- Pagination inside swiper -->
     <div class="swiper-pagination"></div>
   </div>
-
-  <!-- Navigation buttons -->
-  <button class="swiper-btn-prev">
-    ‹
-  </button>
-  <button class="swiper-btn-next">
-    ›
-  </button>
+  <button class="swiper-btn-prev">‹</button>
+  <button class="swiper-btn-next">›</button>
 </article>

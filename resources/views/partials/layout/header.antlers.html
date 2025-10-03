@@ -1,7 +1,10 @@
 <header>
-  {{ partial:layout/container/inner class="flex flex-col gap-y-40 lg:gap-y-60" }}
+  {{ partial:layout/container/inner class="flex flex-col gap-y-40 lg:gap-y-60 relative" }}
     {{ if is_homepage }}
       {{ partial:icons/logo class="w-full h-auto" }}
+
+      {{ partial:icons/badge class="absolute top-0 right-0" }}
+
       {{ partial:menu/main/wrapper }}
     {{ else }}
     <div class="flex justify-between items-center">
