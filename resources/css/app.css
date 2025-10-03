@@ -32,3 +32,25 @@ ul {
 strong {
   @apply font-reckless-bold font-bold;
 }
+
+.animation-container {
+  transition: transform 0.3s ease;
+}
+
+.animation-container:hover [data-animation-rotation] {
+  animation: rotate 6s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+[data-animation-rotation] {
+  transform-origin: 250px 248.5px;
+  transition: animation 0.3s ease;
+}
