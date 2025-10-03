@@ -1,8 +1,8 @@
 <div class="text-plum flex flex-col md:grid md:grid-cols-12 {{ heading_size == 'small' ? 'mb-15 md:mb-10' : 'mb-20 md:mb-15' }}">
 
   <div class="md:col-span-8 lg:col-span-9">
-    {{ partial:components/headings/h3 class="{{ heading_size == 'small' ? 'text-xxxs lg:text-xxs' : 'text-sm md:text-md' }} text-balance" }}
-      {{ article_title }}
+    {{ partial:components/headings/h3 class="{{ heading_size == 'small' ? 'text-xxxs lg:text-xxs' : 'text-sm md:text-md' }} text-balance mb-2" }}
+      {{ article_title | nl2br }}
     {{ /partial:components/headings/h3 }}
 
     {{ if article_description }}
@@ -15,7 +15,7 @@
 
   <div class="md:col-span-4 lg:col-span-3">
     {{ article_info }}
-      <div class="text-xxxs lg:text-xxs flex md:grid md:grid-cols-3 gap-x-20 mt-5 md:mt-0">
+      <div class="text-xxxs lg:text-xxs flex md:grid md:grid-cols-3 gap-x-20 md:gap-x-0 mt-5 md:mt-0">
         <span class="{{ !percentage ? 'hidden' : '' }} md:!flex md:justify-end">
           {{ if percentage }}
             {{ percentage }}%
