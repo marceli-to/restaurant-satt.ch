@@ -4,4 +4,5 @@ window.Alpine = Alpine
 Alpine.start();
 
 import './bootstrap';
+import './gallery';
 

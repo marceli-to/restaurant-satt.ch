@@ -1,0 +1,25 @@
+.gallery-swiper .swiper-pagination {
+  @apply flex items-center justify-center gap-x-8 md:gap-x-10 !relative !bottom-auto mt-10 md:mt-15;
+}
+
+.gallery-swiper .swiper-pagination-bullet {
+  @apply block w-8 h-8 md:w-10 md:h-10 bg-mint rounded-full !m-0 opacity-100 transition-all ease-in-out;
+}
+
+.gallery-swiper .swiper-pagination-bullet-active {
+  @apply bg-forest;
+}
+
+.swiper-btn-prev,
+.swiper-btn-next {
+  @apply absolute top-1/2 -translate-y-1/2 z-10 w-30 h-30 md:w-40 md:h-40 flex items-center justify-center text-lg lg:text-xl leading-none;
+}
+
+.swiper-btn-prev {
+  @apply left-0;
+}
+
+.swiper-btn-next {
+  @apply right-0;
+}
+

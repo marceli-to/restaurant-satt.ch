@@ -33,22 +33,33 @@ tabs:
                       fields:
                         -
                           import: editor
+                    image_gallery:
+                      display: Bildergalerie
+                      instructions: 'Bildergalerie hinzufügen'
+                      icon: media-image-picture-gallery
+                      fields:
+                        -
+                          import: image_gallery
+                menu:
+                  display: Menü
+                  icon: food-menu-book
+                  sets:
                     menu_category:
-                      display: 'Menü Kategorie'
+                      display: Kategorie
                       instructions: 'Kategorie hinzufügen'
                       icon: text-formatting-all-caps
                       fields:
                         -
                           import: menu_category
                     menu_sub_category:
-                      display: 'Menü Unterkategorie'
+                      display: Unterkategorie
                       instructions: 'Unterkategorie hinzufügen'
                       icon: text-formatting-all-caps
                       fields:
                         -
                           import: menu_sub_category
                     menu_position:
-                      display: 'Menü Position'
+                      display: Position
                       instructions: 'Artikel hinzufügen'
                       icon: food-menu-book
                       fields:

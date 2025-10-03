@@ -5,6 +5,10 @@
     {{ partial:components/editor }}
   {{ /if }}
 
+  {{ if type == 'image_gallery' }}
+    {{ partial:components/image_gallery }}
+  {{ /if }}
+
   {{ if type == 'menu_card' }}
     {{ partial:components/menu_card }}
   {{ /if }}
